@@ -5,9 +5,7 @@ metadata:
   labels:
     app: bgd
   name: bgd
-  namespace: bgd
 spec:
-  type: NodePort
   ports:
   - port: 8080
     protocol: TCP
