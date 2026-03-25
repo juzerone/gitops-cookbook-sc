@@ -13,3 +13,11 @@ spec:
   selector:
     app: bgd
 ---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: bgd
+spec:
+  to:
+    name: bgd
+    kind: Service
